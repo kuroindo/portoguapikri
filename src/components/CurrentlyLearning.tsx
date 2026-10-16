@@ -1,0 +1,2 @@
+const items = ['Full Stack Development', 'Laravel', 'Database Architecture', 'UI/UX', 'Software Architecture', 'AI Integration']
+export function CurrentlyLearning() { return <section className="exploring"><p className="section-label"><span>05</span> Currently exploring</p><div>{items.map((item, index) => <span key={item}><i>{String(index + 1).padStart(2, '0')}</i>{item}</span>)}</div><p className="exploring-note">The goal isn’t to collect tools. It’s to understand how the pieces connect.</p></section> }
